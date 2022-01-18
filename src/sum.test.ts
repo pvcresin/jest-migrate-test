@@ -4,16 +4,6 @@ import { expect } from "chai";
 
 import sum from "./sum";
 
-// beforeAllの方が正しそう？ https://jestjs.io/ja/docs/setup-teardown#%E3%82%B9%E3%82%B3%E3%83%BC%E3%83%97
-beforeEach(() => {
-  console.log("beforeEach text");
-});
-
-// afterAllの方が正しそう？
-afterEach(() => {
-  console.log("afterEach text");
-});
-
 describe("describe text", () => {
   context("context text", () => {
     it("it text", () => {
@@ -22,6 +12,8 @@ describe("describe text", () => {
     });
   });
 });
+
+// beforeEachよりbeforeAllの方が正しそう？ https://jestjs.io/ja/docs/setup-teardown#%E3%82%B9%E3%82%B3%E3%83%BC%E3%83%97
 
 // beforeAll(() => console.log("1 - beforeAll"));
 // afterAll(() => console.log("1 - afterAll"));
