@@ -1,8 +1,8 @@
-import "./common";
+import "../src/common";
 
 import { expect } from "chai";
 
-import sum from "./sum";
+import sum from "../src/sum";
 
 describe("describe text", () => {
   context("context text", () => {
