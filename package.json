@@ -16,9 +16,14 @@
     "jest": "^27.4.7",
     "mocha": "^9.1.4",
     "ts-jest": "^27.1.3",
-    "typescript": "^4.5.4"
+    "typescript": "^4.5.4",
+    "webpack": "^5.67.0",
+    "webpack-cli": "^4.9.2"
   },
   "scripts": {
-    "test": "jest"
+    "pretest": "yarn pretest:clean && yarn pretest:build",
+    "pretest:clean": "rm -rf .build-spec",
+    "pretest:build": "webpack-cli --mode development --output-path .build-spec --output-filename main.js --entry ./main/src/before.ts && node .build-spec/main.js",
+    "test": "jest .build-spec"
   }
 }
