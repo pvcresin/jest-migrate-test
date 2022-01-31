@@ -1,7 +1,3 @@
-import "../src/common";
-
-import { expect } from "chai";
-
 import times from "../src/times";
 
 describe("describe text", () => {

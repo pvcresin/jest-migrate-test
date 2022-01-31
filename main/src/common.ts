@@ -1,6 +1,3 @@
-import { describe } from "@jest/globals";
-
-// @ts-expect-error
-global.context = describe;
+import "./browser";
 
 console.log("common");

@@ -129,7 +129,10 @@ module.exports = {
   // setupFiles: [],
 
   // A list of paths to modules that run some code to configure or set up the testing framework before each test
-  // setupFilesAfterEnv: [],
+  setupFilesAfterEnv: [
+    "<rootDir>/main/src/common.ts",
+    "<rootDir>/main/src/before.ts",
+  ],
 
   // The number of seconds after which a test is considered as slow and reported as such in the results.
   // slowTestThreshold: 5,
@@ -138,7 +141,8 @@ module.exports = {
   // snapshotSerializers: [],
 
   // The test environment that will be used for testing
-  testEnvironment: "node",
+  // testEnvironment: "node",
+  testEnvironment: "jsdom",
 
   // Options that will be passed to the testEnvironment
   // testEnvironmentOptions: {},
@@ -150,8 +154,8 @@ module.exports = {
   testMatch: [
     // "**/__tests__/**/*.[jt]s?(x)",
     // "**/?(*.)+(spec|test).[tj]s?(x)"
-    // "<rootDir>/main/spec/**/*.(ts|tsx)",
-    "<rootDir>/.build-spec/**/*.js",
+    "<rootDir>/main/spec/**/*.(ts|tsx)",
+    // "<rootDir>/.build-spec/**/*.js",
   ],
 
   // An array of regexp pattern strings that are matched against all test paths, matched tests are skipped
@@ -170,6 +174,7 @@ module.exports = {
 
   // This option sets the URL for the jsdom environment. It is reflected in properties such as location.href
   // testURL: "http://localhost",
+  testURL: "http://localhost:3000",
 
   // Setting this value to "fake" allows the use of fake timers for functions such as "setTimeout"
   // timers: "real",

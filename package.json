@@ -23,7 +23,8 @@
   "scripts": {
     "pretest": "yarn pretest:clean && yarn pretest:build",
     "pretest:clean": "rm -rf .build-spec",
-    "pretest:build": "webpack-cli --mode development --output-path .build-spec --output-filename main.js --entry ./main/src/before.ts && node .build-spec/main.js",
-    "test": "jest .build-spec"
+    "pretest:build": "webpack-cli --mode development --output-path .build-spec --output-filename main.js --entry ./main/src/before.ts",
+    "test": "node .build-spec/main.js",
+    "test2": "jest ./main/spec"
   }
 }
