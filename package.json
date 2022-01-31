@@ -25,6 +25,6 @@
     "pretest:clean": "rm -rf .build-spec",
     "pretest:build": "webpack-cli --mode development --output-path .build-spec --output-filename main.js --entry ./main/src/before.ts",
     "test": "node .build-spec/main.js",
-    "test2": "jest ./main/spec"
+    "test2": "sh script/js_spec.sh './main/spec/**/*.{js,ts}'"
   }
 }
