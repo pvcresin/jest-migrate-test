@@ -130,8 +130,8 @@ module.exports = {
 
   // A list of paths to modules that run some code to configure or set up the testing framework before each test
   setupFilesAfterEnv: [
-    "<rootDir>/main/src/common.ts",
-    "<rootDir>/main/src/before.ts",
+    "<rootDir>/main/spec/common.ts",
+    "<rootDir>/main/spec/before.ts",
   ],
 
   // The number of seconds after which a test is considered as slow and reported as such in the results.
@@ -154,14 +154,18 @@ module.exports = {
   testMatch: [
     // "**/__tests__/**/*.[jt]s?(x)",
     // "**/?(*.)+(spec|test).[tj]s?(x)"
-    "<rootDir>/main/spec/**/*.(ts|tsx)",
+    "<rootDir>/main/spec/**/*.(js|ts)",
     // "<rootDir>/.build-spec/**/*.js",
   ],
 
   // An array of regexp pattern strings that are matched against all test paths, matched tests are skipped
-  // testPathIgnorePatterns: [
-  //   "/node_modules/"
-  // ],
+  testPathIgnorePatterns: [
+    "/node_modules/",
+    "main/spec/before.ts",
+    "main/spec/browser.ts",
+    "main/spec/common.ts",
+    "main/spec/plugins.ts",
+  ],
 
   // The regexp pattern or array of patterns that Jest uses to detect test files
   // testRegex: [],
