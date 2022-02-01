@@ -10,7 +10,6 @@ module.exports = {
         [
           "module-resolver",
           {
-            // root: ["./src/main"],
             alias: {
               "@main": "./main/src",
             },
