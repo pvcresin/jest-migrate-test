@@ -1,2 +1,3 @@
 import "./browser";
-import "../src/locales/*.ts";
+
+import "@main/locales/*.ts";

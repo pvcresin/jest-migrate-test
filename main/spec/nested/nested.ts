@@ -1,4 +1,4 @@
-import sum from "../../src/sum";
+import sum from "@main/sum";
 
 describe("describe text", () => {
   context("context text", () => {

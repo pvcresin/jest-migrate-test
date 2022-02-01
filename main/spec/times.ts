@@ -1,4 +1,4 @@
-import times from "../src/times";
+import times from "@main/times";
 
 describe("describe text", () => {
   context("context text", () => {
