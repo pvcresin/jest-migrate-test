@@ -5,6 +5,8 @@ describe("describe text", () => {
     it("it text", () => {
       // expect(sum(1, 2)).toBe(3); // Jest
       expect(sum(1, 2)).to.eql(3); // Chai
+      // @ts-expect-error
+      expect(global.locale1).to.eql("locale1");
     });
   });
 });
