@@ -1466,10 +1466,10 @@ babel-plugin-polyfill-regenerator@^0.3.0:
   dependencies:
     "@babel/helper-define-polyfill-provider" "^0.3.1"
 
-babel-plugin-rewire@^1.2.0:
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/babel-plugin-rewire/-/babel-plugin-rewire-1.2.0.tgz#822562d72ed2c84e47c0f95ee232c920853e9d89"
-  integrity sha512-JBZxczHw3tScS+djy6JPLMjblchGhLI89ep15H3SyjujIzlxo5nr6Yjo7AXotdeVczeBmWs0tF8PgJWDdgzAkQ==
+babel-plugin-rewire-ts@^1.4.0:
+  version "1.4.0"
+  resolved "https://registry.yarnpkg.com/babel-plugin-rewire-ts/-/babel-plugin-rewire-ts-1.4.0.tgz#6c814d5aa3ef3d8c0d0c7a27891877fb28930e5b"
+  integrity sha512-XVyyWMIx1fNSG42vbUaAro1LANLs/fBW6KurYaeoVjS2U8zLCaow7LKll6zjs1cwcqcbZK2v59zVouPs+JAqxw==
 
 babel-preset-current-node-syntax@^1.0.0:
   version "1.0.1"

@@ -6,7 +6,7 @@ module.exports = {
         "@babel/preset-typescript",
       ],
       plugins: [
-        "rewire",
+        "rewire-ts",
         "import-glob",
         [
           "module-resolver",
